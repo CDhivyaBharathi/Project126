@@ -55,7 +55,7 @@ export default class PickImage extends React.Component(){
           uri : uri , Name : fileName , type : tpe
       }
       data.append("digit", fileToUpload); 
-      fetch("http://98093c095560.ngrok.io/predict-digit", {
+      fetch("http://98093c095560.ngrok.io/predict-alphabet", {
            method: "POST", 
            body: data, 
            headers: { "content-type": "multipart/form-data", }, }) 
